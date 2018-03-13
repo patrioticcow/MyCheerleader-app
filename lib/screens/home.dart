@@ -18,13 +18,58 @@ class _HomePageState extends State<HomePage> {
     Menu drawer = new Menu();
 
     return new Scaffold(
-      drawer: drawer,
-      appBar: new AppBar(
-        title: new Text(widget.title),
-      ),
-      body: new MaterialApp(
-        
-      ),
-    );
+        drawer: drawer,
+        appBar: new AppBar(
+          title: new Text(widget.title),
+        ),
+        body: new Column(
+          children: [
+            new Column(
+              children: [
+                new Text('Cheer'),
+              ],
+            ),
+
+            
+            new Row(
+              children: [
+                new Expanded(
+                  child: new Container(
+                    padding: new EdgeInsets.all(8.0),
+                    child: new RaisedButton(
+                      child: new Text('Show new cheer'),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+
+            new Row(
+              children: [
+                new Expanded(
+                  child: new Container(
+                    padding: new EdgeInsets.all(8.0),
+                    child: new RaisedButton(
+                      child: new Text('Share cheer'),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+
+            new Row(
+              children: [
+                new Expanded(
+                  child: new Container(
+                    padding: new EdgeInsets.all(8.0),
+                    child: new RaisedButton(
+                      child: new Text('Start meditation'),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ));
   }
 }
