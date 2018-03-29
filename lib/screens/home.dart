@@ -38,6 +38,7 @@ class _HomePageState extends State<HomePage> {
                     padding: new EdgeInsets.all(8.0),
                     child: new RaisedButton(
                       child: new Text('Show new cheer'),
+                      onPressed: (){},
                     ),
                   ),
                 ),
@@ -51,6 +52,7 @@ class _HomePageState extends State<HomePage> {
                     padding: new EdgeInsets.all(8.0),
                     child: new RaisedButton(
                       child: new Text('Share cheer'),
+                      onPressed: (){},
                     ),
                   ),
                 ),
@@ -64,6 +66,7 @@ class _HomePageState extends State<HomePage> {
                     padding: new EdgeInsets.all(8.0),
                     child: new RaisedButton(
                       child: new Text('Start meditation'),
+                      onPressed: (){},
                     ),
                   ),
                 ),

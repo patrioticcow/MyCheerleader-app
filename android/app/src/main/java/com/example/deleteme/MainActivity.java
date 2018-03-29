@@ -1,4 +1,4 @@
-package com.example.happy;
+package com.example.deleteme;
 
 import android.os.Bundle;
 

@@ -40,6 +40,8 @@ class _TestsPageState extends State<TestsPage> {
 
   @override
   void initState() {
+    super.initState();
+
     this._getData();
   }
 
@@ -65,7 +67,7 @@ class _TestsPageState extends State<TestsPage> {
                       color: Colors.blue[500],
                     ),
                     onTap: () {
-                      Navigator.pushNamed(context, TestsPage.routeName + "/${i}/0");
+                      Navigator.pushNamed(context, TestsPage.routeName + "/$i/0");
                     },
                   );
                 }));

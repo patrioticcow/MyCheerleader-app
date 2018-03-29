@@ -8,7 +8,7 @@ void main() => runApp(new MyApp());
 class MyApp extends StatelessWidget {
   @override
   void initState() {
-
+    
   }
 
   @override
@@ -27,12 +27,10 @@ class MyApp extends StatelessWidget {
           print(routeSettings);
 
           var path = routeSettings.name.split('/');
-          final id = path.length > 1 ? int.parse(path[1]) : null;
-          final qid = path.length > 2 ? int.parse(path[2]) : null;
 
           if (path[0] == TestsPage.routeName) {
             return new MaterialPageRoute(
-              builder: (context) => new TestsPage(id: id, qid: qid),
+              builder: (context) => new TestsPage(),
               settings: routeSettings,
             );
           }
